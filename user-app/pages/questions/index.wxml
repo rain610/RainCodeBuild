@@ -1,0 +1,238 @@
+<view class="question-main">
+    <view class="question-item">
+        <text>1、是否饮酒？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="1:0" />是
+            </label>
+            <label class="radio">
+                <radio value="1:1" />否
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>2、是否吸烟？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="2:0" />是
+            </label>
+            <label class="radio">
+                <radio value="2:1" />否
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>3、是否与吸烟者长期同住？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="3:0" />是
+            </label>
+            <label class="radio">
+                <radio value="3:1" />否
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>4、是否正常作息（23点-6点）？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="4:0" />是
+            </label>
+            <label class="radio">
+                <radio value="4:1" />否
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>5、是否经常锻炼？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="5:0" />经常
+            </label>
+            <label class="radio">
+                <radio value="5:1" />偶尔
+            </label>
+            <label class="radio">
+                <radio value="5:2" />从不
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>6、三餐饮食规律吗？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="6:0" />规律
+            </label>
+            <label class="radio">
+                <radio value="6:1" />不吃早餐
+            </label>
+            <label class="radio">
+                <radio value="6:2" />很不规律
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>7、平时多久做一次体检？</text>
+         <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="7:0" />1年
+            </label>
+            <label class="radio">
+                <radio value="7:1" />没规律
+            </label>
+            <label class="radio">
+                <radio value="7:2" />很多年没体检
+            </label>
+            <label class="radio">
+                <radio value="7:3" />生病的时候去医院检查
+            </label>
+        </radio-group>
+    </view>
+    <view class="question-item">
+        <text>8、是否有如下症状。如有，请勾选（可多选）？</text>
+        <view>
+            <text>一、消化系统</text> 
+            <checkbox-group bindchange="checkboxChange" id='8'>
+                <label class="checkbox">
+                    <checkbox value="8:0" />经常消化不良（腹胀、嗳气、反酸等）
+                </label>
+                <label class="checkbox">
+                    <checkbox value="8:1" />经常性便秘（3天排便1次）
+                </label>
+                <label class="checkbox">
+                    <checkbox value="8:2" />偶尔轻度腹泻
+                </label>
+                <label class="checkbox">
+                    <checkbox value="8:3" />长期腹泻
+                </label>
+                <label class="checkbox">
+                    <checkbox value="8:4" />大便带血
+                </label>
+                <label class="checkbox">
+                    <checkbox value="8:5" />便血
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>二、神经系统</text>
+            <checkbox-group bindchange="checkboxChange" id='9'>
+                <label class="checkbox">
+                    <checkbox value="9:0" />失眠
+                </label>
+                <label class="checkbox">
+                    <checkbox value="9:1" />记忆力下降
+                </label>
+                <label class="checkbox">
+                    <checkbox value="9:2" />注意力不能集中
+                </label>
+                <label class="checkbox">
+                    <checkbox value="9:3" />头晕或眩晕
+                </label>
+                <label class="checkbox">
+                    <checkbox value="9:4" />头痛伴有恶心、呕吐
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>三、心血管系统</text>
+            <checkbox-group bindchange="checkboxChange" id='10'>
+                <label class="checkbox">
+                    <checkbox value="10:0" />手脚冰凉
+                </label>
+                <label class="checkbox">
+                    <checkbox value="10:1" />动脉硬化病史
+                </label>
+                <label class="checkbox">
+                    <checkbox value="10:2" />高血脂
+                </label>
+                <label class="checkbox">
+                    <checkbox value="10:3" />高血压
+                </label>
+                <label class="checkbox">
+                    <checkbox value="10:4" />经常性活动后胸闷、气急
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>四、骨骼肌肉系统</text>
+            <checkbox-group bindchange="checkboxChange" id='11'>
+                <label class="checkbox">
+                    <checkbox value="11:0" />体力不支
+                </label>
+                <label class="checkbox">
+                    <checkbox value="11:1" />四肢关节酸痛
+                </label>
+                <label class="checkbox">
+                    <checkbox value="11:2" />腰背部疼痛
+                </label>
+                <label class="checkbox">
+                    <checkbox value="11:3" />肩颈疼痛
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>五、免疫系统</text>
+            <checkbox-group bindchange="checkboxChange" id='12'>
+                <label class="checkbox">
+                    <checkbox value="12:0" />免疫力降低（容易感冒、腹泻）
+                </label>
+                <label class="checkbox">
+                    <checkbox value="12:1" />皮肤容易过敏
+                </label>
+                <label class="checkbox">
+                    <checkbox value="12:2" />对光或化学物质过敏
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>六、内分泌系统</text>
+            <checkbox-group bindchange="checkboxChange" id='13'>
+                <label class="checkbox">
+                    <checkbox value="13:0" />月经异常（痛经、量少、血块、量大、提前、推迟）
+                </label>
+                <label class="checkbox">
+                    <checkbox value="13:1" />脾气暴躁
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>七、呼吸系统</text>
+            <checkbox-group bindchange="checkboxChange" id='14'>
+                <label class="checkbox">
+                    <checkbox value="14:0" />胸闷、气短
+                </label>
+                <label class="checkbox">
+                    <checkbox value="14:1" />气喘
+                </label>
+                <label class="checkbox">
+                    <checkbox value="14:2" />长期咳嗽
+                </label>
+                <label class="checkbox">
+                    <checkbox value="14:3" />慢性咳嗽
+                </label>
+                <label class="checkbox">
+                    <checkbox value="14:4" />咳血（或痰中带血）
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>八、泌尿生殖系统</text>
+            <checkbox-group bindchange="checkboxChange" id='15'>
+                <label class="checkbox">
+                    <checkbox value="15:0" />尿频、尿急、尿痛
+                </label>
+                <label class="checkbox">
+                    <checkbox value="15:1" />夜间多尿
+                </label>
+                <label class="checkbox">
+                    <checkbox value="15:2" />晨起容易浮肿
+                </label>
+            </checkbox-group>
+        </view>
+    </view>
+    <view class="question-item">
+        <text>若有其他异常请详述：</text>
+        <textarea  class="question-area"/>
+    </view>
+    <button type="primary" class="question-sub" bindtap="bindSubQues">提交</button>
+</view>

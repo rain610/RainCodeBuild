@@ -1,0 +1,19 @@
+<view class="container">
+    <view wx:if='{{isScan}}' class="scan-container">
+        <text>请扫描血液检测条形码</text>
+        <button type="primary" size='default' class="scan-btn" bindtap='bindscan'>扫描条形码</button>
+        <text class="scan-write" bindtap='bindwrite'>输入条形码ID</text>
+    </view>
+    <view wx:if='{{isSub}}' class="scan-container">
+        <view class="scan-code-container">
+            <text>扫描结果</text>
+            <text class="scan-code">{{scanCode}}</text>
+        </view>
+        <button type="primary" size='default' class="sub-btn" bindtap='bindsubmit'>确认</button>
+    </view>
+    <view wx:if='{{isWrite}}' class="scan-container">
+        <!--<view class="scan-tips">DR</view>-->
+        <input type="text" class='scan-input' auto-focus bindinput='bindCode' placeholder="请输入条形码"/>
+        <button type="primary" size='default' class="sub-btn" bindtap='bindsubmit'>确认</button>
+    </view>
+</view>

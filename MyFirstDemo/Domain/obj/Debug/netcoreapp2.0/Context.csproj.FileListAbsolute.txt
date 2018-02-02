@@ -1,0 +1,15 @@
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Context.deps.json
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Context.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Context.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\DBModel.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Repository.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\DBModel.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Repository.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Context.csprojResolveAssemblyReference.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Context.csproj.CoreCompileInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Context.AssemblyInfoInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Context.AssemblyInfo.cs
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Context.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Context.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Common.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Common.pdb

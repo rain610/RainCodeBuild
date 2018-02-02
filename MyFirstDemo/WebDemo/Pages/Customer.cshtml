@@ -1,0 +1,118 @@
+﻿@page
+@model WebDemo.Pages.CustomerModel
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Customer";
+}
+<form id="formSearch" name="formSearch" method="post" class="form-inline" style="margin-top:10px;">
+    <div class="container-fluid" style="background-color:aliceblue;padding-bottom:6px">
+        
+        <div class="row row-default">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>会员编号</label>
+                    <input type="text" name="CustomerID" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>会员名称</label>
+                    <input type="text" name="ContactName" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" id="btn_query" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp;查询
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<div id="toolbar" class="btn-group">
+    <a id="btn_add" class="btn btn-default iframe" title="新增客户信息" data-minwidth="950" href="">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+    </a>
+    <button id="btn_delete" type="button" class="btn btn-default" onclick="ListToDo(this, 'delete', GetTbCheckValByName('btSelectItem').join())">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+    </button>
+</div>
+<table id="tb_customerList">
+    <thead>
+        <tr>
+            <th data-radio="true"></th>
+            <th data-field="CustomerID" data-sortable="true" >客户编号</th>
+            <th data-field="CompanyName">公司名称</th>
+            <th data-field="ContactName">联系人</th>
+            <th data-field="ContactTitle">主题</th>
+            <th data-field="Address">地址</th>
+            <th data-field="City" hidden="hidden">城市</th>
+            @*<th data-field="@BABenefitActive.A.BAID" data-formatter="UrlFormat" data-width="310px">操作</th>*@
+        </tr>
+    </thead>
+</table>
+<input type="hidden" id="hdData" name="hdData" value="@JsonConvert.SerializeObject(Model.Customers)"/>
+@*<pre>@JsonConvert.SerializeObject(Model.Customers, Formatting.Indented, new JsonSerializerSettings
+{
+    NullValueHandling = NullValueHandling.Ignore
+})</pre>*@
+@section Scripts {
+    <script>
+        //require(["/js/page/test.js"]);
+        //require(function () {
+        //    alert("I am working!")
+        //});
+
+        $(function () {
+            $.fn.serializeObject = function () {
+                var o = {};
+                var a = this.serializeArray();
+                $.each(a, function () {
+                    if (typeof (o[this.name]) !== 'undefined') {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];
+                        }
+                        o[this.name].push(this.value || '');
+                    } else {
+                        o[this.name] = this.value || '';
+                    }
+                });
+                return o;
+            }
+            $("table").each(function () {
+                if (this.id.startsWith("tb_")) {
+                    var $tb_table = $(this);
+                    var data = JSON.parse($("#hdData").val());
+                    $tb_table.bootstrapTable({
+                        url: "/Customer?handler=Init",
+                        //method:"get",
+                        queryParams: QueryParams,   //传递参数（*）
+                        showExport: true,           //是否显示导出
+                        pageNumber: 1,
+                        pageSize: 10,       //每页的记录行数（*）
+                        pageList:[10,25,50,100],
+                        exportDataType: "basic",    //basic', 'all', 'selected'.
+                        //data: data.rows,
+                        pagination: true,
+                        //total: data.total,
+                        onPreBody: function () {
+                        },
+                    });
+                    if ($("#btn_query").length > 0) {
+                        $("#btn_query").click(function () {
+                            $tb_table.bootstrapTable('refresh', QueryParams);;
+                        });
+                    }
+                }
+            });
+        })
+
+        //表格的查询参数
+        function QueryParams(params) {
+            var formData = $("#formSearch").serializeObject();
+            formData.PageSize = params.pageSize;   //页面大小
+            formData.PageIndex = params.pageNumber;   //页码
+            formData.OrderField = params.sortName ? params.sortName + " " + params.sortOrder : "";
+            return formData;
+        };
+    </script>
+}

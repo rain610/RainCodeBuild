@@ -1,0 +1,8 @@
+<view class="login-main">
+    <view class="login-box">
+        <text>场次编号</text>
+        <input type="number" class="login-input" placeholder="请询问血检现场管理员" placeholder-style='font-size:32rpx' bindinput='bindsessionId' maxlength="4"/>
+    </view>
+    <button type="primary" class="login-btn" size='default' bindtap='bindlogin'>确定</button>
+    <text class="get-history" bindtap='bindInfoDetail'>查看历史提交信息</text>
+</view>

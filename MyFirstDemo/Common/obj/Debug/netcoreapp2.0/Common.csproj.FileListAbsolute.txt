@@ -1,0 +1,9 @@
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\bin\Debug\netcoreapp2.0\Common.deps.json
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\bin\Debug\netcoreapp2.0\Common.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\bin\Debug\netcoreapp2.0\Common.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\obj\Debug\netcoreapp2.0\Common.csprojResolveAssemblyReference.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\obj\Debug\netcoreapp2.0\Common.csproj.CoreCompileInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfoInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\obj\Debug\netcoreapp2.0\Common.AssemblyInfo.cs
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\obj\Debug\netcoreapp2.0\Common.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Common\obj\Debug\netcoreapp2.0\Common.pdb

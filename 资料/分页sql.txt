@@ -1,0 +1,7 @@
+﻿  declare @PageIndex int=10;
+  declare @PageSize int=10;
+  with temp as (SELECT ROW_NUMBER() over (order by id) as rownumber,* from [TCInterVacationEBooking].[dbo].[EBookingUser])
+
+select(SELECT max(rownumber) FROM temp) as maxRowNum,* from temp where rownumber BETWEEN @pageSize*(@pageIndex-1)+1 AND @pageSize*(@pageIndex)
+
+

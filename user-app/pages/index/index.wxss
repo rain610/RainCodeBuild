@@ -1,0 +1,54 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.scan-btn,.sub-btn{
+    width: 600rpx;
+}
+.scan-btn{
+    margin-top: 50rpx;
+    margin-bottom: 30rpx;
+}
+.scan-code{
+    text-align: center;
+}
+.scan-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100rpx;
+    position: relative;
+}
+.scan-container text{
+    text-align: center;
+}
+.scan-input{
+    width: 80%;
+    margin-bottom: 50rpx;
+    border:1px solid #e4e4e4;
+    height: 90rpx;
+    padding-left: 90rpx;
+}
+.scan-write{
+    font-size: 32rpx;
+    color: blue;
+    text-decoration: underline;
+}
+.scan-code-container{
+    display: flex;
+    flex: 1;
+    padding: 40rpx;
+    border-bottom: 1px solid #e4e4e4;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40rpx;
+}
+.scan-tips{
+    position: absolute;
+    left: 60rpx;
+    line-height: 90rpx;
+}

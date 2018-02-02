@@ -1,0 +1,9 @@
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Domain.deps.json
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Domain.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\bin\Debug\netcoreapp2.0\Domain.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Domain.csproj.CoreCompileInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Domain.AssemblyInfoInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Domain.AssemblyInfo.cs
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Domain.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Domain.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\Domain\obj\Debug\netcoreapp2.0\Domain.csprojResolveAssemblyReference.cache

@@ -1,0 +1,74 @@
+<view class="container info-container">
+    <view class="info-item">
+        <text class="item-label">条形码ID</text>
+        <text>{{scancode}}</text>
+    </view>
+    <view style="padding:20rpx 0;">
+        <text style="margin-left:20rpx;">基础信息</text>
+    </view>
+    <view class="info-item">
+        <text class="item-label">姓名</text>
+        <input type="text" name="" value="{{guestName}}" placeholder='请输入您的姓名' placeholder-style='font-size:28rpx;' bindinput='bindguestName'/>
+    </view>
+    <view class="info-item">
+        <text class="item-label">性别</text>
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio">
+                <radio value="1" checked='{{gender == 1?true:false}}'/>男
+            </label>
+            <label class="radio">
+                <radio value="2" checked='{{gender == 2?true:false}}'/>女
+            </label>
+        </radio-group>
+    </view>
+    <view class="info-item">
+        <text class="item-label">年龄</text>
+        <input type="number" name="" value="{{age}}" placeholder='请输入您的年龄'placeholder-style='font-size:28rpx;' bindinput='bindage'/>
+    </view>
+    <view class="info-item">
+        <view class="icon-input">cm</view>
+        <text class="item-label">身高</text>
+        <input type="number" name="" value="{{height}}"  placeholder='请输入您的身高' placeholder-style='font-size:28rpx;' maxlength="3" bindinput='bindheight'/>
+    </view>
+    <view class="info-item">
+        <view class="icon-input">kg</view>
+        <text class="item-label">体重</text>
+        <input type="number" name="" value="{{weight}}"  placeholder='请输入您的体重' placeholder-style='font-size:28rpx;' maxlength="10" bindinput='bindweight'/>
+    </view>
+    <view class="info-item">
+        <text class="item-label">手机号码</text>
+        <input type="number" name="" value="{{phoneNumber}}" placeholder='请输入您的常用手机号' placeholder-style='font-size:28rpx;' bindblur="bindphoneNumber" maxlength="11"/>
+    </view>
+    <view style="padding:20rpx 0;">
+        <text style="margin-left:20rpx;">病史记录</text>
+    </view>
+    <view class="info-item-area" >
+        <text class="item-type">既往病史</text>
+        <textarea  value='{{medicalHistory}}' bindinput='bindmedicalHistory' placeholder="非必填项" placeholder-style='font-size:28rpx;'/>
+    </view>
+    <view class="info-item-area">
+        <text class="item-type">肿瘤家族史</text>
+        <textarea value='{{familyHistoryOfCancer}}' placeholder='如无肿瘤家族史，请输入“无”' placeholder-style='font-size:28rpx;' bindinput='bindfamilyHistoryOfCancer'/>
+    </view>
+    <view style="padding:20rpx 0;">
+        <text style="margin-left:20rpx;">检测内容</text>
+    </view>
+    <view class="info-item">
+        <checkbox-group class="radio-group" bindchange="checkboxChange">
+            <label class="radio" wx:if='{{checkType_1 === 1?true:false}}'>
+                <checkbox value="1" checked='{{checkItem_1 == 1?true:false}}' />DR-70
+            </label>
+            <label class="radio" wx:if='{{checkType_2 === 2?true:false}}'>
+                <checkbox value="2"checked='{{checkItem_2 == 2?true:false}}' />SH2a
+            </label>
+        </checkbox-group>
+    </view>
+    <view class="ui-infos-box">
+        <checkbox-group bindchange='bindCheckInfos'>
+            <label class="checkbox">
+                <checkbox value='1'/>已阅读并同意<text bindtap="bindInfos">《知情同意书》</text>
+            </label>
+        </checkbox-group>
+    </view>
+    <button type="primary" size='default' class="subInfo-btn" bindtap="bindInfoSub">确认</button>
+</view>

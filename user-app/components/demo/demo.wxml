@@ -1,0 +1,6 @@
+<template name="demo">
+    <view>
+        这是一个组件页面
+    </view>
+    <view bindtap='test'>click</view>
+</template>

@@ -1,0 +1,15 @@
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\MyFirstDemo.deps.json
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\MyFirstDemo.runtimeconfig.json
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\MyFirstDemo.runtimeconfig.dev.json
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\MyFirstDemo.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\MyFirstDemo.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\obj\Debug\netcoreapp2.0\MyFirstDemo.csprojResolveAssemblyReference.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\obj\Debug\netcoreapp2.0\MyFirstDemo.csproj.CoreCompileInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\obj\Debug\netcoreapp2.0\MyFirstDemo.AssemblyInfoInputs.cache
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\obj\Debug\netcoreapp2.0\MyFirstDemo.AssemblyInfo.cs
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\obj\Debug\netcoreapp2.0\MyFirstDemo.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\obj\Debug\netcoreapp2.0\MyFirstDemo.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\DBModel.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\Repository.dll
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\DBModel.pdb
+D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\MyFirstDemo\bin\Debug\netcoreapp2.0\Repository.pdb

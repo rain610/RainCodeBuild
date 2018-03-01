@@ -1,0 +1,12 @@
+﻿@page "{handler?}"
+@model WebDemo.Pages.TestHandler2Model
+@{
+    ViewData["Title"] = "TestHandler2";
+}
+
+<h2>TestHandler2</h2>
+<form method="post">
+    <input type="text" name="id" />
+    <input type="submit" asp-page-handler="First" title="PostFirst" value="PostFirst" />
+    <input type="submit" asp-page-handler="Second" title="PostSecond" value="PostSecond" />
+</form>

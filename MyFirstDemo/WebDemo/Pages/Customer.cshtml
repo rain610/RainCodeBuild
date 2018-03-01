@@ -6,7 +6,6 @@
 }
 <form id="formSearch" name="formSearch" method="post" class="form-inline" style="margin-top:10px;">
     <div class="container-fluid" style="background-color:aliceblue;padding-bottom:6px">
-        
         <div class="row row-default">
             <div class="col-sm-4">
                 <div class="form-group">
@@ -78,6 +77,40 @@
                 });
                 return o;
             }
+            $("#btn_add").attr("href", "/Customer/Create");
+            $("a.iframe").each(function () {
+                var ctr = $(this);
+                ctr.on('click', function () {
+                    return OpenFrame(ctr);
+                });
+            });
+            //$("#btn_add").click(function () {
+            //    layer.open({
+            //        type: 2 //此处以iframe举例
+            //        , title: '当你选择该窗体时，即会在最顶端'
+            //        , area: ['390px', '330px']
+            //        , shade: 0
+            //        , offset: [ //为了演示，随机坐标
+            //            Math.random() * ($(window).height() - 300)
+            //            , Math.random() * ($(window).width() - 390)
+            //        ]
+            //        , maxmin: true
+            //        , content: 'settop.html'
+            //        , btn: ['继续弹出', '全部关闭'] //只是为了演示
+            //        , yes: function () {
+            //            $(that).click(); //此处只是为了演示，实际使用可以剔除
+            //        }
+            //        , btn2: function () {
+            //            layer.closeAll();
+            //        }
+
+            //        , zIndex: layer.zIndex //重点1
+            //        , success: function (layero) {
+            //            layer.setTop(layero); //重点2
+            //        }
+            //    });
+            //})
+
             $("table").each(function () {
                 if (this.id.startsWith("tb_")) {
                     var $tb_table = $(this);
@@ -114,5 +147,28 @@
             formData.OrderField = params.sortName ? params.sortName + " " + params.sortOrder : "";
             return formData;
         };
+
+        function OpenFrame(ctr) {
+            var $ctr = ctr instanceof jQuery ? $ctr = ctr : $ctr = $(ctr);
+            $ctr.blur();
+            var index = layer.open({
+                type: 2,
+                title: $ctr.attr("title"),
+                shadeClose: false,
+                shade: [0.2, '#393D49'],
+                maxmin: true, //开启最大化最小化按钮
+                //area: [ctr.data("w") ? ctr.data("w") + 'px' : '850px', ctr.data("h") ? ctr.data("h") + 'px' : '680px'],
+                minWidth: typeof ($ctr.data("minwidth")) == 'undefined' ? 500 : $ctr.data("minwidth"),
+                content: $ctr.attr("href"),
+                success: function (layero, index) {
+                    layer.iframeAuto(index)
+                },
+                cancel: function (index, layero) {
+                    if ($ctr.data("callback")) eval($ctr.data("callback"));
+                    if ($("#btn_query").length > 0 && $ctr.data("refresh") != 'no') $("#btn_query").click();
+                },
+            });
+            return false;
+        }
     </script>
 }

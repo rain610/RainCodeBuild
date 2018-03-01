@@ -1,0 +1,83 @@
+﻿@page
+@model WebDemo.Pages.Employee.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form id="formSearch" name="formSearch" method="post" class="form-inline" style="margin-top:10px;">
+    <div class="container-fluid" style="background-color:aliceblue;padding-bottom:6px">
+
+        <div class="row row-default">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>FirstName</label>
+                    <input asp-for="SearchModel.FirstName" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>LastName</label>
+                    <input type="text" asp-for="SearchModel.LastName" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <button type="submit" id="btn_query" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;&nbsp;查询
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<div id="toolbar" class="btn-group">
+    <a id="btn_add" class="btn btn-default iframe" title="新增员工信息" data-minwidth="950" asp-page="/Employee/Create">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+    </a>
+</div>
+<form method="post">
+    <table id="tb_EmployeeList" class="table">
+        <thead>
+            <tr>
+                @*<th data-radio="true"></th>*@
+                <th data-field="EmployeeID" data-sortable="true">编号</th>
+                <th data-field="FirstName">FirstName</th>
+                <th data-field="LastName">LastName</th>
+                @*<th data-field="@BABenefitActive.A.BAID" data-formatter="UrlFormat" data-width="310px">操作</th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.EmployeeList?.Count > 0)
+            {
+                @foreach (var item in Model.EmployeeList)
+                {
+                    <tr>
+                        <td>
+                            @item.EmployeeID
+                        </td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>
+                        <td>
+                            <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.EmployeeID">Edit</a>
+                            <a class="btn btn-primary" href="Employee/Edit?id=@item.EmployeeID">Edit</a>
+                        </td>
+                        <td>
+                            <button class="btn btn-warning"
+                                    type="submit"
+                                    asp-page-handler="Delete"
+                                    asp-route-EmployeeID="@item.EmployeeID">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</form>
+@section Scripts {
+    <script>
+        $(function () {
+
+        });
+    </script>
+}

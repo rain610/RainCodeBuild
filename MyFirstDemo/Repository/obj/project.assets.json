@@ -1859,11 +1859,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Repository\\Repository.csproj",
+      "projectUniqueName": "H:\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Repository\\Repository.csproj",
+      "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj",
       "packagesPath": "D:\\MyConfiguration\\wzy08277\\.nuget\\packages\\",
-      "outputPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Repository\\obj\\",
+      "outputPath": "H:\\RainCodeBuild\\MyFirstDemo\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1876,17 +1876,15 @@
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://api.nuget.17usoft.com/v3/index.json": {},
         "http://nugetproxy.17usoft.com/v3/index.json": {},
-        "https://nuget.org/api/v2/": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\DBModel\\DBModel.csproj": {
-              "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\DBModel\\DBModel.csproj"
+            "H:\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj": {
+              "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj"
             }
           }
         }

@@ -1,9 +1,0 @@
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\bin\Debug\netcoreapp2.0\JobDemo.deps.json
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\bin\Debug\netcoreapp2.0\JobDemo.dll
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\bin\Debug\netcoreapp2.0\JobDemo.pdb
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\obj\Debug\netcoreapp2.0\JobDemo.csprojResolveAssemblyReference.cache
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\obj\Debug\netcoreapp2.0\JobDemo.csproj.CoreCompileInputs.cache
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\obj\Debug\netcoreapp2.0\JobDemo.AssemblyInfoInputs.cache
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\obj\Debug\netcoreapp2.0\JobDemo.AssemblyInfo.cs
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\obj\Debug\netcoreapp2.0\JobDemo.dll
-D:\MyConfiguration\wzy08277\Desktop\mydemo\MyFirstDemo\JobDemo\obj\Debug\netcoreapp2.0\JobDemo.pdb

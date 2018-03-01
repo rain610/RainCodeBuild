@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Microsoft.Extensions.DependencyInjection/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -200,6 +221,28 @@
     }
   },
   "libraries": {
+    "Microsoft.Extensions.DependencyInjection/2.0.0": {
+      "sha512": "oSNa+gZnVV0I1Mn0F73bQuH3wP62Q4YVcnc1Pj2Tkr3WhEUWNR55AsNB3VQcvynvod+zddAy+FgURSsIqBiHww==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "sha512": "QcpsfSFzNeacofwbu4L9+dA25G7oNAuMxCYNWGYyEKfg2AUsnCgGm2dJHxi+sFMfX6Yx2Cll0Ailqz4pd66kHA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
     "Microsoft.NETCore.App/2.0.0": {
       "sha512": "qt7x3I5YWSSomdbbrWP82IXlFZJdefBqnVaFgDxqvMaGlJiPVocdTypZ5HcEPW2IpDSjvRVoiWle3fX/aokJig==",
       "type": "package",
@@ -660,6 +703,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Microsoft.Extensions.DependencyInjection >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -673,11 +717,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Common\\Common.csproj",
+      "projectUniqueName": "H:\\RainCodeBuild\\MyFirstDemo\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Common\\Common.csproj",
+      "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\Common\\Common.csproj",
       "packagesPath": "D:\\MyConfiguration\\wzy08277\\.nuget\\packages\\",
-      "outputPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Common\\obj\\",
+      "outputPath": "H:\\RainCodeBuild\\MyFirstDemo\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -690,11 +734,9 @@
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://api.nuget.17usoft.com/v3/index.json": {},
         "http://nugetproxy.17usoft.com/v3/index.json": {},
-        "https://nuget.org/api/v2/": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -710,6 +752,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

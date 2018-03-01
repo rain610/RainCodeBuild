@@ -1,0 +1,60 @@
+﻿@page
+@model WebDemo.Pages.TestHandlerModel
+@inject StatisticsService StaticService
+@{
+    ViewData["Title"] = "TestHandler";
+}
+
+<h2>TestHandler</h2>
+<h2>@StaticService.Test()</h2>
+<form method="post">
+    <input type="text" name="id" />
+    <input type="submit" value="默认Post" />
+    <input type="submit" asp-page-handler="First" title="PostFirst" value="PostFirst" />
+    <input type="submit" asp-page-handler="Second" title="PostSecond" value="PostSecond" />
+
+    <input type="button" id="BtnSearch" value="ajax">
+</form>
+
+<hr />
+<form method="post" asp-page-handler="First" asp-route-id="123">
+    <h2>路由传值</h2>
+    <button>路由传值</button>
+</form>
+
+<hr />
+<form method="get" asp-page="TestHandler" asp-page-handler="First123">
+    <h2>get路由传值</h2>
+    <button>路由传值</button>
+</form>
+
+<form method="get" asp-page="TestHandler2" asp-page-handler="HelloWorld">
+    <button>跳转页面</button>
+</form>
+@*<input type="button" asp-page-handler="First" title="GetFirst" value="GetFirst" />*@
+@section Scripts{
+    <script>
+        //$("#BtnSearch").click(function () {
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "/TestHandler?handler=First",
+        //        data: { id: 123, __RequestVerificationToken: $("input[name='__RequestVerificationToken']").val() },
+        //        success: function (response) {
+                    
+        //        }
+        //    });
+        //});
+
+        $("#BtnSearch").click(function () {
+            $.ajax({
+                type: "POST",
+                url: "/TestHandler?handler=First",
+                data: { id: 123 },
+                success: function (response) {
+
+                }
+            });
+        });
+    </script>
+}
+

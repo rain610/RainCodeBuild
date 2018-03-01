@@ -1,0 +1,22 @@
+﻿@page
+@model WebDemo.Pages.Employee.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post">
+    <table class="table">
+        <tr>
+            <td>FirstName</td>
+            <td>
+                <input type="text" name="FirstName" id="FirstName" asp-for="Employee.FirstName" />
+            </td>
+        </tr>
+        <tr>
+            <td>LastName</td>
+            <td><input type="text" name="LastName" id="LastName" asp-for="Employee.LastName" /></td>
+        </tr>
+    </table>
+    <button type="submit" class="btn btn-primary">保存</button>
+</form>
+

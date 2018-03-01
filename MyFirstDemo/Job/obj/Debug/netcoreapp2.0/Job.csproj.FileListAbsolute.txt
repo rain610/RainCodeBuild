@@ -1,0 +1,11 @@
+H:\RainCodeBuild\MyFirstDemo\Job\bin\Debug\netcoreapp2.0\Job.deps.json
+H:\RainCodeBuild\MyFirstDemo\Job\bin\Debug\netcoreapp2.0\Job.runtimeconfig.json
+H:\RainCodeBuild\MyFirstDemo\Job\bin\Debug\netcoreapp2.0\Job.runtimeconfig.dev.json
+H:\RainCodeBuild\MyFirstDemo\Job\bin\Debug\netcoreapp2.0\Job.dll
+H:\RainCodeBuild\MyFirstDemo\Job\bin\Debug\netcoreapp2.0\Job.pdb
+H:\RainCodeBuild\MyFirstDemo\Job\obj\Debug\netcoreapp2.0\Job.csprojResolveAssemblyReference.cache
+H:\RainCodeBuild\MyFirstDemo\Job\obj\Debug\netcoreapp2.0\Job.csproj.CoreCompileInputs.cache
+H:\RainCodeBuild\MyFirstDemo\Job\obj\Debug\netcoreapp2.0\Job.AssemblyInfoInputs.cache
+H:\RainCodeBuild\MyFirstDemo\Job\obj\Debug\netcoreapp2.0\Job.AssemblyInfo.cs
+H:\RainCodeBuild\MyFirstDemo\Job\obj\Debug\netcoreapp2.0\Job.dll
+H:\RainCodeBuild\MyFirstDemo\Job\obj\Debug\netcoreapp2.0\Job.pdb

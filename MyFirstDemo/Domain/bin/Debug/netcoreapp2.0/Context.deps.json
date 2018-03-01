@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "9a2b78ae6c87adadf3530ab87303db0959c56273"
+    "signature": "92ca8b92cb9e320e7211b287e51bf96f445ef39d"
   },
   "compilationOptions": {},
   "targets": {
@@ -24,6 +24,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Dapper.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
@@ -189,6 +202,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+        },
         "runtime": {
           "Common.dll": {}
         }
@@ -221,6 +237,20 @@
       "sha512": "sha512-t5DMz+1aEkBcyCgkj+6hJHNsUq3k/d67lVMTNzICEhVjPUI3Gt2kgotSK8S4SpziIbFPphnOEn8M6Q75ED5hRQ==",
       "path": "dapper/1.50.4",
       "hashPath": "dapper.1.50.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oSNa+gZnVV0I1Mn0F73bQuH3wP62Q4YVcnc1Pj2Tkr3WhEUWNR55AsNB3VQcvynvod+zddAy+FgURSsIqBiHww==",
+      "path": "microsoft.extensions.dependencyinjection/2.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QcpsfSFzNeacofwbu4L9+dA25G7oNAuMxCYNWGYyEKfg2AUsnCgGm2dJHxi+sFMfX6Yx2Cll0Ailqz4pd66kHA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",

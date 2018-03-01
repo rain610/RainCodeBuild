@@ -1,0 +1,28 @@
+﻿@page
+@model WebDemo.Pages.Employee.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <input asp-for="Employee.EmployeeID" type="hidden" />
+    <table class="table">
+        <tr>
+            <td>
+                <label asp-for="Employee.FirstName"></label>
+                <input asp-for="Employee.FirstName" />
+                <span asp-validation-for="Employee.FirstName"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Employee.LastName"></label>
+                <input asp-for="Employee.LastName" />
+                <span asp-validation-for="Employee.LastName"></span>
+            </td>
+        </tr>
+    </table>
+    <button type="submit" class="btn btn-primary">保存</button>
+</form>
+

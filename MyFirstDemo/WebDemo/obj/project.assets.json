@@ -5022,6 +5022,9 @@
       "Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+        },
         "compile": {
           "bin/placeholder/Common.dll": {}
         },
@@ -13207,6 +13210,7 @@
       "Context >= 1.0.0",
       "DBModel >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.3",
+      "Microsoft.AspNetCore.Authentication.Cookies >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.2",
       "Newtonsoft.Json >= 10.0.3"
@@ -13222,11 +13226,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\WebDemo\\WebDemo.csproj",
+      "projectUniqueName": "H:\\RainCodeBuild\\MyFirstDemo\\WebDemo\\WebDemo.csproj",
       "projectName": "WebDemo",
-      "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\WebDemo\\WebDemo.csproj",
+      "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\WebDemo\\WebDemo.csproj",
       "packagesPath": "D:\\MyConfiguration\\wzy08277\\.nuget\\packages\\",
-      "outputPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\WebDemo\\obj\\",
+      "outputPath": "H:\\RainCodeBuild\\MyFirstDemo\\WebDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13239,23 +13243,21 @@
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://api.nuget.17usoft.com/v3/index.json": {},
         "http://nugetproxy.17usoft.com/v3/index.json": {},
-        "https://nuget.org/api/v2/": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Domain\\Context.csproj": {
-              "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Domain\\Context.csproj"
+            "H:\\RainCodeBuild\\MyFirstDemo\\Domain\\Context.csproj": {
+              "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\Domain\\Context.csproj"
             },
-            "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\DBModel\\DBModel.csproj": {
-              "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\DBModel\\DBModel.csproj"
+            "H:\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj": {
+              "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj"
             },
-            "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Common\\Common.csproj": {
-              "projectPath": "D:\\MyConfiguration\\wzy08277\\Desktop\\mydemo\\MyFirstDemo\\Common\\Common.csproj"
+            "H:\\RainCodeBuild\\MyFirstDemo\\Common\\Common.csproj": {
+              "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\Common\\Common.csproj"
             }
           }
         }
@@ -13272,6 +13274,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.3, )"
+          },
+          "Microsoft.AspNetCore.Authentication.Cookies": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

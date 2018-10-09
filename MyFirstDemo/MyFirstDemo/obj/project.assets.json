@@ -517,7 +517,7 @@
       ]
     },
     "Microsoft.NETCore.App/2.0.0": {
-      "sha512": "qt7x3I5YWSSomdbbrWP82IXlFZJdefBqnVaFgDxqvMaGlJiPVocdTypZ5HcEPW2IpDSjvRVoiWle3fX/aokJig==",
+      "sha512": "/mzXF+UtZef+VpzzN88EpvFq5U6z4rj54ZMq/J968H6pcvyLOmcupmTRpJ3CJm8ILoCGh9WI7qpDdiKtuzswrQ==",
       "type": "package",
       "path": "microsoft.netcore.app/2.0.0",
       "files": [
@@ -795,7 +795,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.0.0": {
-      "sha512": "beiggSNEq7BzsapQveU8/jnig1Ks5+EGhJGHJ47LjAIbcp5VsZb3BGOLTP+i6rdVnIo5S2IGsDlK+ZXtuO0D8g==",
+      "sha512": "L4GGkcI/Mxl8PKLRpFdGmLb5oI8sGIR05bDTGkzCoamAjdUl1Zhkov2swjEsZvKYT8kkdiz39LtwyGYuCJxm1A==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.0.0",
       "files": [
@@ -807,7 +807,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostPolicy/2.0.0": {
-      "sha512": "FCIMP1lOzyFHAtm/dy05XI1uFlZUrtQVWgEGrh12q9/cttj+D8BzV3uDOSF1PJOMqcYIsjNIYH0Cai0Ll5iV2Q==",
+      "sha512": "rm7mMn0A93fwyAwVhbyOCcPuu2hZNL0A0dAur9sNG9pEkONPfCEQeF7m2mC8KpqZO0Ol6tpV5J0AF3HTXT3GXA==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostpolicy/2.0.0",
       "files": [
@@ -819,7 +819,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostResolver/2.0.0": {
-      "sha512": "6QrlYWSZBOum6dsuwggutytr/w7kkbTa8ba26BWXWkvT2E9/a38VMqGRw365hfwSARj4EPBofRtLP956qdmgVw==",
+      "sha512": "uBbjpeSrwsaTCADZCzRk+3aBzNnMqkC4zftJWBsL+Zk+8u+W+/lMb2thM5Y4hiVrv1YQg9t6dKldXzOKkY+pQw==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostresolver/2.0.0",
       "files": [
@@ -831,7 +831,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "yoqOCIXPMmCbA9bezEExbtsFcGqBXeQoxTxBBVaYJTXAhIgJCfmpwtX8t4yQiV1DdohJlKnZOViox14TmldKqA==",
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
@@ -846,7 +846,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "d5yG9vDHWIEN8IW6bkHgyRbd/fdx36R3iIL3MuQfJH0XyhmMhgVa/sDk0CK5oc518TN9IZCuf+8Q//xpfegCSw==",
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
@@ -859,7 +859,7 @@
       ]
     },
     "Microsoft.Win32.Registry/4.4.0": {
-      "sha512": "Oa7KHZFGq90+Y+QLOEwsL+tzdR0bCvqACtNNbEyxiYjGkefqSf9bMec53ynFmo6RrGO6Q75SiNNXHXbnPv05KQ==",
+      "sha512": "dA36TlNVn/XfrZtmf0fiI/z1nd3Wfp2QVzTdj26pqgP9LFWq0i1hYEUAW50xUjGFYn1+/cP3KGuxT2Yn1OUNBQ==",
       "type": "package",
       "path": "microsoft.win32.registry/4.4.0",
       "files": [
@@ -897,7 +897,7 @@
       ]
     },
     "NETStandard.Library/2.0.0": {
-      "sha512": "ZDTUmAv4oLGrwGfrizj0hWpLIA1o7y663XAAocjJF19QbKXKn3l6GOCgKIP8oKmt2dxWpNYGr071mniBEHenbQ==",
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
       "path": "netstandard.library/2.0.0",
       "files": [
@@ -1025,7 +1025,7 @@
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "Mh3KBR4VnXWKcOSdK+KLMC5bHiBXFnNuVDjVhvEJ8Vyp4mr+mLGWIKgv1sfKb6L2daDtS8D21gBxVkuMKeT17w==",
+      "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
       "type": "package",
       "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -1038,7 +1038,7 @@
       ]
     },
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "vggwrXeGNvBuCVEvMDb7JDKbzzYQiG4YqKoICF4MeYsenpGbyih+XHh0HFGZy3RGAVCNdpWXmJMu4q8jgzRXGQ==",
+      "sha512": "LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
       "type": "package",
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -1052,7 +1052,7 @@
       ]
     },
     "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "MnJkWqldGxf/nSEyruDgjonsX7LC/SSJFeMDlquthxTsiiccFpXwOBIarrp8CVbG31H0fos8mOiIpI34npTYpA==",
+      "sha512": "38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
       "type": "package",
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -1066,7 +1066,7 @@
       ]
     },
     "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "vs7cmpwYxrmj8pfmw8hUJfOSzUQxVyfEr+AASiyLw6cZyomRMwY935JSjuk3vDQK9UgJt3e/QcQ8NG+RXc0hDA==",
+      "sha512": "YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "type": "package",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -1080,7 +1080,7 @@
       ]
     },
     "System.Data.SqlClient/4.4.0": {
-      "sha512": "IyDD48uMbs3OaYRyU+5mH1Sjdz3Yk552nHnCfOGRurU/vD2+C/IwwY4wEqcI8017TkcwuGGefS+jlvbulwLEYA==",
+      "sha512": "fxb9ghn1k1Ua7FFdlvtiBOD4/PsQvD/fk2KnhS+FK7VC6OggEx6P+lP1P0+KMb5V2dqS1+FbR7HCenoqzJMNIA==",
       "type": "package",
       "path": "system.data.sqlclient/4.4.0",
       "files": [
@@ -1304,7 +1304,7 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "xW73gvfYHpIehJVjsTGFNCyIOWAJghvqiy+UvxV1Ip5M7Q3aJZtKel9gWG8ZZ/42GSx91zN6V7CLOFviJKsYfg==",
+      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
@@ -1347,7 +1347,7 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "YcAnhu8zOdC2miuv0Rk4/uIipWUAfxxK7x8GJsFAqiKIIU5ehgTEdn+/mBy9Sh2unCJ1jgLlkxM9QPXr5dXgUw==",
+      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
@@ -1597,7 +1597,7 @@
       ]
     },
     "System.Security.AccessControl/4.4.0": {
-      "sha512": "n5bA2Z65Gg4PHh7Y7bK4hrstmnPGqROH4WFhBykxg4/DOJR2fb7GsyQKMHMj9RJdGMsv4yszHmuozsOJGO1uzg==",
+      "sha512": "2NRFPX/V81ucKQmqNgGBZrKGH/5ejsvivSGMRum0SMgPnJxwhuNkzVS1+7gC3R2X0f57CtwrPrXPPSe6nOp82g==",
       "type": "package",
       "path": "system.security.accesscontrol/4.4.0",
       "files": [
@@ -1635,7 +1635,7 @@
       ]
     },
     "System.Security.Principal.Windows/4.4.0": {
-      "sha512": "SZeZXdKuKhlXPPc//oZmkV7S11kvo+YpfZHqS4aRrcZI7oQG3ajBIi/ZtG+5KWTxPkzDLwz4KCYyvGaD9+ngFg==",
+      "sha512": "pP+AOzt1o3jESOuLmf52YQTF7H3Ng9hTnrOESQiqsnl2IbBh1HInsAMHYtoh75iUYV0OIkHmjvveraYB6zM97w==",
       "type": "package",
       "path": "system.security.principal.windows/4.4.0",
       "files": [
@@ -1739,7 +1739,7 @@
       ]
     },
     "System.Text.Encoding.CodePages/4.4.0": {
-      "sha512": "TytV95zP1aH+d7VP9OCPOm5swmMRTUDLAFEgOjxArN4glltnkMPpZTF8x4i8kJ4W5zq9FbGqvVXPjFm5XDjuow==",
+      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
       "type": "package",
       "path": "system.text.encoding.codepages/4.4.0",
       "files": [
@@ -1874,15 +1874,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "H:\\RainCodeBuild\\MyFirstDemo\\MyFirstDemo\\MyFirstDemo.csproj",
+      "projectUniqueName": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\MyFirstDemo\\MyFirstDemo.csproj",
       "projectName": "MyFirstDemo",
-      "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\MyFirstDemo\\MyFirstDemo.csproj",
+      "projectPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\MyFirstDemo\\MyFirstDemo.csproj",
       "packagesPath": "D:\\MyConfiguration\\wzy08277\\.nuget\\packages\\",
-      "outputPath": "H:\\RainCodeBuild\\MyFirstDemo\\MyFirstDemo\\obj\\",
+      "outputPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\MyFirstDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1895,18 +1892,21 @@
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://api.nuget.17usoft.com/v3/index.json": {},
+        "http://nexus.17usoft.com/repository/nuget-gnflight/": {},
         "http://nugetproxy.17usoft.com/v3/index.json": {},
-        "https://nuget.org/api/v2/": {}
+        "http://tcwnuget.17usoft.com/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "H:\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj": {
-              "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj"
+            "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj": {
+              "projectPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj"
             },
-            "H:\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj": {
-              "projectPath": "H:\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj"
+            "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj": {
+              "projectPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj"
             }
           }
         }

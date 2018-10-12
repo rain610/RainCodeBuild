@@ -3,6 +3,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
@@ -15,5 +16,8 @@
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
     <ProjectReference Include="..\Domain\Context.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Upload\" />
   </ItemGroup>
 </Project>

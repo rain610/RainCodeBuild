@@ -32,12 +32,12 @@ namespace WebDemo.Pages
         /// <summary>
         /// 中医院提成单价
         /// </summary>
-        private static int ZYYHospitalUnitPrice = 8;
+        private static int ZYYHospitalUnitPrice = 7;
 
         /// <summary>
         /// 华苏药店提成单价
         /// </summary>
-        private static int DurgStoreUnitPrice = 7;
+        private static int DurgStoreUnitPrice = 8;
 
         /// <summary>
         /// HSSFWorkbook支持2003，XSSFWorkbook支持2007
@@ -101,6 +101,10 @@ namespace WebDemo.Pages
             Response.Body.Write(result, 0, result.Length);
             Response.Body.Flush();
             Response.Body.Close();
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(filename);
+            }
             //Response.ContentType = "application/vnd.ms-excel";
             //Response.Headers.Add("Content-Disposition", "attachment;filename=" + "11.xlsx");
             //Response.Body.Write(result,0, result.Length);

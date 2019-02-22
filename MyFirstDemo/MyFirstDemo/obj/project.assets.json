@@ -16,6 +16,58 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "DotNetCore.NPOI/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "DotNetCore.NPOI.Core": "1.2.1",
+          "DotNetCore.NPOI.OpenXml4Net": "1.2.1",
+          "DotNetCore.NPOI.OpenXmlFormats": "1.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NPOI.OOXML.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPOI.OOXML.dll": {}
+        }
+      },
+      "DotNetCore.NPOI.Core/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "1.0.0",
+          "System.Drawing.Common": "4.5.0",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NPOI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPOI.dll": {}
+        }
+      },
+      "DotNetCore.NPOI.OpenXml4Net/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "DotNetCore.NPOI.Core": "1.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPOI.OpenXml4Net.dll": {}
+        }
+      },
+      "DotNetCore.NPOI.OpenXmlFormats/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "DotNetCore.NPOI.OpenXml4Net": "1.2.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NPOI.OpenXmlFormats.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -229,6 +281,24 @@
           }
         }
       },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -279,6 +349,15 @@
           }
         }
       },
+      "SharpZipLib/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -299,6 +378,29 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Drawing.Common/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -389,6 +491,15 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Security.AccessControl/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -445,13 +556,14 @@
           "ref/netstandard1.3/System.Text.Encoding.dll": {}
         }
       },
-      "System.Text.Encoding.CodePages/4.4.0": {
+      "System.Text.Encoding.CodePages/4.5.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0"
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
@@ -474,6 +586,22 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "Context/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "DBModel": "1.0.0",
+          "DotNetCore.NPOI": "1.2.1",
+          "Repository": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Context.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Context.dll": {}
+        }
+      },
       "DBModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -489,13 +617,24 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "DBModel": "1.0.0",
-          "Dapper": "1.50.4"
+          "Dapper": "1.50.4",
+          "DotNetCore.NPOI": "1.2.1"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
         },
         "runtime": {
           "bin/placeholder/Repository.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -514,6 +653,54 @@
         "lib/netstandard1.3/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "DotNetCore.NPOI/1.2.1": {
+      "sha512": "5M2x2mt+JOTByhzSH6PtcDOepZswmb6Uu2rjiOx5l3lKc7AP9kbmhN7WLKakGVSNhnOMgXbFXulIRRflPeNb/g==",
+      "type": "package",
+      "path": "dotnetcore.npoi/1.2.1",
+      "files": [
+        ".signature.p7s",
+        "dotnetcore.npoi.1.2.1.nupkg.sha512",
+        "dotnetcore.npoi.nuspec",
+        "lib/net461/NPOI.OOXML.dll",
+        "lib/netstandard2.0/NPOI.OOXML.dll"
+      ]
+    },
+    "DotNetCore.NPOI.Core/1.2.1": {
+      "sha512": "K8hlUP5yCxCK2JNROBBGAM50EtRshBe+RglFrrJkrbygR3o1HsruvHk6NlEFI+pYV9brDVqRc8xsYz5ZfeLfgQ==",
+      "type": "package",
+      "path": "dotnetcore.npoi.core/1.2.1",
+      "files": [
+        ".signature.p7s",
+        "dotnetcore.npoi.core.1.2.1.nupkg.sha512",
+        "dotnetcore.npoi.core.nuspec",
+        "lib/net461/NPOI.dll",
+        "lib/netstandard2.0/NPOI.dll"
+      ]
+    },
+    "DotNetCore.NPOI.OpenXml4Net/1.2.1": {
+      "sha512": "LxHszYfzPwg+ibE70gR7HrLlOtMHhWWEXLOTcW6KkwyJJ9eisCfrSkfbGvJnvfQHxmL9RXfZ+KV+B0/OeZ7kmw==",
+      "type": "package",
+      "path": "dotnetcore.npoi.openxml4net/1.2.1",
+      "files": [
+        ".signature.p7s",
+        "dotnetcore.npoi.openxml4net.1.2.1.nupkg.sha512",
+        "dotnetcore.npoi.openxml4net.nuspec",
+        "lib/net461/NPOI.OpenXml4Net.dll",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.dll"
+      ]
+    },
+    "DotNetCore.NPOI.OpenXmlFormats/1.2.1": {
+      "sha512": "bim3nwQ5b/6bAoWa7DhHTYwz9w5dmMDwqn27LgcE8Sa/eYh672BOfT6SaKFuxQT1+X0Au3WhTwH1RgO/4aTNtg==",
+      "type": "package",
+      "path": "dotnetcore.npoi.openxmlformats/1.2.1",
+      "files": [
+        ".signature.p7s",
+        "dotnetcore.npoi.openxmlformats.1.2.1.nupkg.sha512",
+        "dotnetcore.npoi.openxmlformats.nuspec",
+        "lib/net461/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.dll"
       ]
     },
     "Microsoft.NETCore.App/2.0.0": {
@@ -831,10 +1018,12 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "sha512": "5BdAWDgMNwf90L0J+C/eh6kfHDa37ViL1cBL1nv5zPA4TB2cGV51YiQyvzCEy9DBE0LwwMI4+PkUpIekKyocSA==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
@@ -892,6 +1081,25 @@
         "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "sha512": "aXrCxI6PdEEJkqIDRYCe2oBRZ1gto5Ac1Y/WuahG/CD+PB5rAVFU7VpkBILBUQQG/NBtxbIRM0Q61m5uJQLTPw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -1079,6 +1287,20 @@
         "version.txt"
       ]
     },
+    "SharpZipLib/1.0.0": {
+      "sha512": "38egGevtPMQn/6olZZUteKUC7+BD47LdCGKo9Vyj17+HWDwiqPXsyJu55q9WSybhwVKwt0q2FLhiuJjZfQpsHw==",
+      "type": "package",
+      "path": "sharpziplib/1.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ICSharpCode.SharpZipLib.dll",
+        "lib/net45/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.0.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
     "System.Data.SqlClient/4.4.0": {
       "sha512": "fxb9ghn1k1Ua7FFdlvtiBOD4/PsQvD/fk2KnhS+FK7VC6OggEx6P+lP1P0+KMb5V2dqS1+FbR7HCenoqzJMNIA==",
       "type": "package",
@@ -1141,6 +1363,38 @@
         "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
         "system.data.sqlclient.4.4.0.nupkg.sha512",
         "system.data.sqlclient.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Drawing.Common/4.5.0": {
+      "sha512": "LLI+GGolsv4K8Eu2PN5N3/1t4pM5zoU4fM3lWhSOawJuCjv9iQJJODjd4/QJIgpjlqxzQDMMoOjAaVuzrNJT0g==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -1596,6 +1850,32 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "sha512": "6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/uap10.0.16300/_._",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/uap10.0.16300/_._",
+        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Security.AccessControl/4.4.0": {
       "sha512": "2NRFPX/V81ucKQmqNgGBZrKGH/5ejsvivSGMRum0SMgPnJxwhuNkzVS1+7gC3R2X0f57CtwrPrXPPSe6nOp82g==",
       "type": "package",
@@ -1738,11 +2018,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Text.Encoding.CodePages/4.4.0": {
-      "sha512": "6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+    "System.Text.Encoding.CodePages/4.5.0": {
+      "sha512": "16EVkWmNnoH3/Yj9c5s5VuLK5Uv/Dnkc3P2kMmnD7wJcUuvcHVvM2IhVJanf2hHRZUitH+cIkPCPHrBoCXc7Rw==",
       "type": "package",
-      "path": "system.text.encoding.codepages/4.4.0",
+      "path": "system.text.encoding.codepages/4.5.0",
       "files": [
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -1778,7 +2059,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "system.text.encoding.codepages.4.4.0.nupkg.sha512",
+        "system.text.encoding.codepages.4.5.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1850,6 +2131,11 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
+    "Context/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Context.csproj",
+      "msbuildProject": "../Domain/Context.csproj"
+    },
     "DBModel/1.0.0": {
       "type": "project",
       "path": "../DBModel/DBModel.csproj",
@@ -1859,10 +2145,16 @@
       "type": "project",
       "path": "../Repository/Repository.csproj",
       "msbuildProject": "../Repository/Repository.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Context >= 1.0.0",
       "DBModel >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Repository >= 1.0.0"
@@ -1904,6 +2196,9 @@
           "projectReferences": {
             "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj": {
               "projectPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\DBModel\\DBModel.csproj"
+            },
+            "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\Domain\\Context.csproj": {
+              "projectPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\Domain\\Context.csproj"
             },
             "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj": {
               "projectPath": "D:\\MySelfDemo\\RainCodeBuild\\MyFirstDemo\\Repository\\Repository.csproj"

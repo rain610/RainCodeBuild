@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
+    <ProjectReference Include="..\Domain\Context.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 

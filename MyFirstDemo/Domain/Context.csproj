@@ -9,9 +9,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

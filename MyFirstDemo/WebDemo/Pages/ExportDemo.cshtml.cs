@@ -9,6 +9,7 @@ using DBModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using NPOI.HSSF.Util;
 using NPOI.SS.UserModel;
 using NPOI.SS.Util;
 using NPOI.XSSF.UserModel;
@@ -27,7 +28,7 @@ namespace WebDemo.Pages
         /// <summary>
         /// 附二医院提成单价
         /// </summary>
-        private static int SD2HospitalUnitPrice = 5;
+        private static int SD2HospitalUnitPrice = 6;
 
         /// <summary>
         /// 中医院提成单价
@@ -173,9 +174,9 @@ namespace WebDemo.Pages
 
         private string GetDrugName(string sheetName)
         {
-            if (sheetName == "附二院宁必泰")
+            if (sheetName == "附二院宁泌泰")
             {
-                return "宁必泰";
+                return "宁泌泰";
             }
             else if (sheetName == "附二院坤泰")
             {
@@ -183,7 +184,7 @@ namespace WebDemo.Pages
             }
             else if (sheetName == "中医院")
             {
-                return "坤泰";
+                return "宁泌泰";
             }
             return string.Empty;
         }
@@ -212,6 +213,8 @@ namespace WebDemo.Pages
         public byte[] GetExportToXLSX(Dictionary<string, List<DoctorDosageStatistics>> doctorDosageDic)
         {
             IWorkbook workbook = new XSSFWorkbook();
+            var headStyle = CreateHeadStyle(workbook);
+            var bodyStyle = CreateBodyStyle(workbook);
             foreach (var hospitalName in doctorDosageDic.Keys)
             {
                 var sheet = workbook.CreateSheet(hospitalName);
@@ -229,7 +232,7 @@ namespace WebDemo.Pages
                 //headerRow.GetCell(0).CellStyle = SetCellStyle(workbook);
                 foreach (var cell in headerRow.Cells)
                 {
-                    cell.CellStyle = SetCellStyle(workbook);
+                    cell.CellStyle = headStyle;
                 }
                 index += 1;
                 rangeRowIndex += 1;
@@ -248,13 +251,29 @@ namespace WebDemo.Pages
                         row.CreateCell(5).SetCellValue(item.Money);
                         index += 1;
                         allMoney += item.Money;
+                        for (int j = 0; j < 6; j++)
+                        {
+                            row.GetCell(j).CellStyle = bodyStyle;
+                        }
                     }
                     if (childCount > 1)
                     {
                         sheet.AddMergedRegion(new CellRangeAddress(rangeRowIndex, rangeRowIndex + childCount - 1, 0, 0));
-                        sheet.AddMergedRegion(new CellRangeAddress(rangeRowIndex, rangeRowIndex + childCount - 1, 6, 6));
+                        var region = new CellRangeAddress(rangeRowIndex, rangeRowIndex + childCount - 1, 6, 6);
+                        sheet.AddMergedRegion(region);
+                        //sheet.GetRow(rangeRowIndex).CreateCell(6).SetCellValue(allMoney);
+                        //for (int m = region.FirstRow; i <= region.LastRow; i++)
+                        //{
+                        //    IRow row = sheet.GetRow(m);
+                        //    for (int j = region.FirstColumn; j <= region.LastColumn; j++)
+                        //    {
+                        //        ICell singleCell = row.GetCell(j);// HSSFCellUtil.GetCell(row, (short)j);
+                        //        singleCell.CellStyle = bodyStyle;
+                        //    }
+                        //}
                     }
                     sheet.GetRow(rangeRowIndex).CreateCell(6).SetCellValue(allMoney);
+                    sheet.GetRow(rangeRowIndex).GetCell(6).CellStyle = bodyStyle;
                     rangeRowIndex += childCount;
                 }
             }
@@ -275,6 +294,67 @@ namespace WebDemo.Pages
             font.Boldweight = (short)FontBoldWeight.Bold;//字体加粗
             style.SetFont(font); //将字体样式赋给样式对象
             return style;
+        }
+
+
+        private void SetHeader(List<string> headerFeilds, ISheet sheet, IRow headerRow, ICellStyle headerStyle)
+        {
+            headerRow.HeightInPoints = 18;
+            for (var i = 0; i < headerFeilds.Count; i++)
+            {
+                var value = headerFeilds[i];
+                sheet.SetColumnWidth(i, 256 * 15);
+                headerRow.CreateCell(i).SetCellValue(headerFeilds[i]);
+                headerRow.GetCell(i).CellStyle = headerStyle;
+            }
+        }
+
+        private static ICellStyle CreateHeadStyle(IWorkbook workbook)
+        {
+            var cellStyle = workbook.CreateCellStyle();
+            IFont font = workbook.CreateFont();
+            font.FontName = "微软雅黑";
+            font.Color = HSSFColor.White.Index;
+            font.Boldweight = (short)FontBoldWeight.Bold;
+            font.FontHeightInPoints = 12;
+            cellStyle.SetFont(font);
+            cellStyle.BorderBottom = BorderStyle.Thin;
+            cellStyle.BorderLeft = BorderStyle.Thin;
+            cellStyle.BorderRight = BorderStyle.Thin;
+            cellStyle.BorderTop = BorderStyle.Thin;
+            cellStyle.BottomBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.LeftBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.RightBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.TopBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.FillForegroundColor = HSSFColor.Green.Index;
+            cellStyle.FillPattern = FillPattern.SolidForeground;
+            cellStyle.FillBackgroundColor = HSSFColor.Green.Index;
+            cellStyle.Alignment = HorizontalAlignment.Left;//文字水平对齐方式
+            cellStyle.VerticalAlignment = VerticalAlignment.Center;//文字垂直对齐方式
+            return cellStyle;
+        }
+        private static ICellStyle CreateBodyStyle(IWorkbook workbook)
+        {
+            var cellStyle = workbook.CreateCellStyle();
+            IFont font = workbook.CreateFont();
+            font.FontName = "微软雅黑";
+            font.Color = HSSFColor.Black.Index;
+            font.FontHeightInPoints = 10;
+            cellStyle.SetFont(font);
+            cellStyle.BorderBottom = BorderStyle.Thin;
+            cellStyle.BorderLeft = BorderStyle.Thin;
+            cellStyle.BorderRight = BorderStyle.Thin;
+            cellStyle.BorderTop = BorderStyle.Thin;
+            cellStyle.BottomBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.LeftBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.RightBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.TopBorderColor = HSSFColor.Grey50Percent.Index;
+            cellStyle.FillForegroundColor = HSSFColor.White.Index;
+            cellStyle.FillPattern = FillPattern.SolidForeground;
+            cellStyle.FillBackgroundColor = HSSFColor.White.Index;
+            cellStyle.Alignment = HorizontalAlignment.Left;//文字水平对齐方式
+            cellStyle.VerticalAlignment = VerticalAlignment.Center;//文字垂直对齐方式
+            return cellStyle;
         }
     }
 }

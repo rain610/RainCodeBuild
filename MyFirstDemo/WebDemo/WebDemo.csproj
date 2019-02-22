@@ -13,9 +13,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DBModel\DBModel.csproj" />
     <ProjectReference Include="..\Domain\Context.csproj" />
+    <ProjectReference Include="..\Shared\Shared.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Upload\" />

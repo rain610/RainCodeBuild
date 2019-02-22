@@ -9,7 +9,7 @@ namespace Repository
 {
     public class EmployeeRepository
     {
-        public static string SqlConnectionString = "server=10.101.42.50;Database = Northwind;User ID=sa;Password=Foxconn99";
+        public static string SqlConnectionString = "server=10.101.42.39;Database = Northwind;User ID=sa;Password=Foxconn99";
         public IList<EmployeeModel> GetEmployees()
         {
             var customerList = new List<EmployeeModel>();

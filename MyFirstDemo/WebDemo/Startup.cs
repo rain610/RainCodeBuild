@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Context;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
-using Common;
+using Shared;
 
 namespace WebDemo
 {

@@ -5,6 +5,8 @@ using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Context.DelegateDemo;
+using Newtonsoft.Json.Linq;
 
 namespace MyFirstDemo
 {
@@ -51,6 +53,32 @@ namespace MyFirstDemo
                 Console.WriteLine(ex.ToString());
             }
 
+            //委托
+            Leader leader = new Leader();
+            TeamA teamA = new TeamA(leader);
+            TeamB teamB = new TeamB(leader);
+            leader.Fall();
+
+            var listArr = new List<int> { 0, 1, 3, 4, 12 };
+            var testAr = 2;
+            var aa11 = listArr.Any(p => p == testAr);
+            var aa22 = listArr.Where(p => p == testAr);
+            if (listArr.Contains(testAr))
+            {
+                Console.WriteLine("存在");
+            }
+            else
+            {
+                Console.WriteLine("不存在");
+            }
+
+
+            SortedSet<int> sortSet = new SortedSet<int>();
+            var sortSetArr = new List<int> { 1, 23, 4, 9, 5 };
+            foreach (var item in sortSetArr)
+            {
+                sortSet.Add(item);
+            }
             Console.WriteLine("Hello World!");
             Console.ReadLine();
         }

@@ -28,12 +28,12 @@ namespace Microsoft.Extensions.DependencyInjection
                 {
                     switch (attribute.LifeTime)
                     {
-                        case LifeTime.Scoped:
+                        case ServiceLifetime.Scoped:
                             {
                                 services.AddScoped(attribute.ServiceType, implType);
                                 break;
                             }
-                        case LifeTime.Singleton:
+                        case ServiceLifetime.Singleton:
                             {
                                 services.AddSingleton(attribute.ServiceType, implType);
                                 break;

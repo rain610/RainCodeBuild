@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,9 +14,10 @@ namespace Shared
     [AttributeUsage(AttributeTargets.Class)]
     public class MapToAttribute : Attribute
     {
-        public LifeTime LifeTime { get; }
+        //public LifeTime LifeTime { get; }
+        public ServiceLifetime LifeTime { get; }
         public Type ServiceType { get; }
-        public MapToAttribute(Type serviceType, LifeTime lifeTime = LifeTime.Transient)
+        public MapToAttribute(Type serviceType, ServiceLifetime lifeTime = ServiceLifetime.Transient)
         {
             this.ServiceType = serviceType;
             this.LifeTime = lifeTime;

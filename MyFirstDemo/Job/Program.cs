@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Shared.Options;
 using System;
 using System.IO;
 using System.Net;
@@ -34,9 +36,31 @@ namespace Job
             })
             .UseKestrel()
             .UseContentRoot(Directory.GetCurrentDirectory())
+            .ConfigureServices((context,srvs)=> {
+                Configuration = context.Configuration;
+                new JobServerBuilder()
+                    .ConfigureServices(svcs => svcs
+                        .AddOptions()
+                        )
+                    .UseJobFactory<ServicePrviderJobFactory>()
+                    .UseStartup<Startup>()
+                    .Build(context.Configuration)
+                    .StartAsync()
+                    .Wait();
+            })
             .Configure(_ => { })
             .Build()
             .Run();
+
+            //new JobServerBuilder()
+            //    .ConfigureServices(svcs => svcs
+            //        .AddOptions()
+            //        )
+            //    .UseJobFactory<ServicePrviderJobFactory>()
+            //    .UseStartup<Startup>()
+            //    .Build()
+            //    .StartAsync()
+            //    .Wait();
         }
 
         private static void OnUnhandledException(object sender, UnhandledExceptionEventArgs eventArgs)
@@ -56,5 +80,7 @@ namespace Job
         {
             Console.WriteLine("Program is being shutdown ......");
         }
+
+        public static IConfiguration Configuration { get; private set; }
     }
 }

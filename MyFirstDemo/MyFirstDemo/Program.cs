@@ -14,6 +14,13 @@ namespace MyFirstDemo
     {
         static void Main(string[] args)
         {
+            int t1 = 2 | 4;
+            
+            var falg1 = (6 & 8)>0;
+            var falg2 = (6 & 1) > 0;
+            Console.WriteLine(falg1);
+            Console.WriteLine(falg2);
+            Console.WriteLine(new EnumerableExample().ContainTest());
             //构造函数继承
             var test = new Test("lalal");
             //var dalRepository = new CustomerRepository();

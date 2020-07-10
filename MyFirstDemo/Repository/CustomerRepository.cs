@@ -9,7 +9,8 @@ namespace Repository
 {
     public class CustomerRepository
     {
-        public static string SqlConnectionString = "Data Source=10.101.42.39;Database = Northwind;Persist Security Info=True;User ID=sa;Password=Foxconn99";
+        //public static string SqlConnectionString = "Data Source=10.101.42.39;Database = Northwind;Persist Security Info=True;User ID=sa;Password=Foxconn99";
+        public static string SqlConnectionString = "Data Source=192.168.1.139;Database = AdventureWorks2012;Persist Security Info=True;User ID=sa;Password=szwk_2019";
         public IList<CustomerModel> GetCustomers()
         {
             var customerList = new List<CustomerModel>();
